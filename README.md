@@ -63,7 +63,7 @@ Or, if you are using ES6
 
 ### Demo
 
-![](./demo.png)
+![](./screenshot.png)
 
 ### API
 

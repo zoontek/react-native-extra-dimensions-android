@@ -1,0 +1,22 @@
+{
+  "name": "react-native-extra-dimensions-android-example",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean-modules": "rm -rf ./node_modules/react-native-extra-dimensions-android/{example,node_modules}",
+    "clean": "rm -rf ./node_modules",
+    "postinstall": "yarn clean-modules",
+    "start": "react-native start",
+    "reinstall": "yarn clean && yarn install"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.2",
+    "react-native-extra-dimensions-android": "../"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "metro-react-native-babel-preset": "^0.59.0"
+  }
+}
