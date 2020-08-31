@@ -1,5 +1,5 @@
-
 ### Notice
+
 Pull requests always welcome!
 
 ## ExtraDimensions
@@ -10,7 +10,6 @@ This module allows you to access additional display metrics on Android devices. 
 - Soft menu height
 - Status bar height
 - Smart bar height (MeiZu)
-
 
 ### Why?
 
@@ -26,12 +25,11 @@ view needs to fill up the real screen size.
    ```
    npm install react-native-extra-dimensions-android --save
    ```
-   
 2. linking
 
-    ```
-    react-native link react-native-extra-dimensions-android
-    ```
+   ```
+   react-native link react-native-extra-dimensions-android
+   ```
 
 2b. You may have to register the module (in android/app/src/main/java/com/YOUR-PROJECT-NAME/MainApplication.java)
 `react-native link` should automatically do the following for you. If it doesn't, you might have to add it yourself.
@@ -50,6 +48,7 @@ view needs to fill up the real screen size.
       ......
     }
     ```
+
 3. As this is a package with Java, you'll need to rebuild the project.
 
 e.g. `react-native run-android`
@@ -69,14 +68,14 @@ Or, if you are using ES6
 ### API
 
 `ExtraDimensions.get(dimension: string)` that takes in a dimension name, and returns its value as a `number`.
- 
+
 Supported dimensions are:
 
-- `REAL_WINDOW_HEIGHT`   - Actual height of screen including system decor elements
-- `REAL_WINDOW_WIDTH`    - Actual width of screen including system decor elements
-- `STATUS_BAR_HEIGHT`    - Height of the status bar
+- `REAL_WINDOW_HEIGHT` - Actual height of screen including system decor elements
+- `REAL_WINDOW_WIDTH` - Actual width of screen including system decor elements
+- `STATUS_BAR_HEIGHT` - Height of the status bar
 - `SOFT_MENU_BAR_HEIGHT` - Height of the soft menu bar (supported on most new Android devices)
-- `SMART_BAR_HEIGHT`     - Height of the MeiZu's device smart bar
+- `SMART_BAR_HEIGHT` - Height of the MeiZu's device smart bar
 
 Alternatively, there are methods for each constant, to fulfill autocomplete in your IDE
 

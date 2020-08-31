@@ -1,23 +1,53 @@
 {
   "name": "react-native-extra-dimensions-android",
-  "version": "1.2.5",
+  "version": "1.0.0",
+  "license": "ISC",
   "description": "Access additional display metrics on Android devices: status bar height, soft menu bar height, real screen size.",
-  "main": "index.js",
+  "author": "Jack Hsu <jack.hsu@gmail.com> (http://jaysoo.ca)",
+  "homepage": "https://github.com/zoontek/react-native-extra-dimensions-android",
+  "types": "dist/typescript/index.d.ts",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/module/index.js",
+  "files": [
+    "/android",
+    "/dist",
+    "/src",
+    "package.json"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sunhat/react-native-extra-dimensions-android"
+    "url": "https://github.com/zoontek/react-native-extra-dimensions-android.git"
   },
-  "files": [
-    "android",
-    "index",
-    "README.md",
-    "LICENSE"
-  ],
   "keywords": [
     "react-native",
+    "react native",
     "react",
+    "dimensions",
     "android"
   ],
-  "author": "Jack Hsu <jack.hsu@gmail.com> (http://jaysoo.ca/)",
-  "license": "ISC"
+  "scripts": {
+    "format": "prettier '**/*.{js,json,md,ts,tsx}' --write",
+    "prepare": "bob build"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "dist",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "peerDependencies": {
+    "react-native": ">=0.60.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@react-native-community/bob": "^0.16.2",
+    "@types/react-native": "^0.63.12",
+    "prettier": "^2.1.1",
+    "react": "^16.13.1",
+    "react-native": "^0.63.2",
+    "typescript": "^4.0.2"
+  }
 }
